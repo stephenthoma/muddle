@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muddle.js: Lightweight modals</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Muddle<span class="light">.js</span></h2>
+      <span class="tag">Modals never felt so good</span>
+    </header>
+    <div class="content">
+      <div class="center">
+        <button id="trig" class="button blue">Click me</button>
+        <span>~I dare you~</span>
+      </div>
+    </div>
+  </div>
+  <div id="modal-1" class="muddle-modal md-anim">
+    <div class="md-content">
+      <div class="md-header">
+        <h3 class="title">I'm a modal!</h3>
+        <span class="tagline">..or am I something more?</span>
+      </div>
+      <div class="md-body">
+        <button class="button blue md-close">Muddle</button>
+      </div>
+    </div>
+  </div>
+  <div class="muddle-overlay"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="muddle.js"></script>
+  <script type="text/javascript">
+    add_trigger("trig", "modal-1");
+  </script>
+</body>
+</html>
+
+
