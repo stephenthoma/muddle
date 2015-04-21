@@ -29,16 +29,16 @@ p {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px;
   margin-bottom: 0;
   margin-top: 10px;
-  padding: 10px;
+  padding: 7px;
   text-transform: none;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
-  width: 20px;
+  width: 55px;
   text-align: center;
 }
 .button.blue {
@@ -122,6 +122,9 @@ p {
 .md-active ~ .muddle-overlay {
   opacity: 1;
   visibility: visible;
+}
+body.md-active {
+  overflow: hidden;
 }
 
 .muddle-modal {
