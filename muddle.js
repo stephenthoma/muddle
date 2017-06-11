@@ -1,17 +1,17 @@
 function add_trigger(trigger_id, modal_id) {
-  $("#" + trigger_id).on("click", function() {
-      muddle.open($("#" + modal_id));
+  $('#' + trigger_id).on('click', function() {
+      muddle.open($('#' + modal_id));
   });
 }
 
 var muddle = (function() {
   var self = {};
 
-  $(".muddle-overlay").on("click", function() {
+  $('.muddle-overlay').on('click', function() {
     self.close();
   });
 
-  $(".md-close").on("click", function() {
+  $('.md-close').on('click', function() {
     self.close();
   });
 
@@ -19,15 +19,15 @@ var muddle = (function() {
     muddle.close();
 
     var modal = $(element);
-    $(modal).addClass("md-active");
-    $("body").addClass("md-active");
+    $(modal).addClass('md-active');
+    $('body').addClass('md-active');
   };
 
   self.close = function() {
-    var modal = $(".md-active");
+    var modal = $('.md-active');
     if (modal) {
-      modal.removeClass("md-active");
-      $("body").removeClass("md-active");
+      modal.removeClass('md-active');
+      $('body').removeClass('md-active');
     }
   };
 
